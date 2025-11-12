@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Financial Bot",
-  description: "Personal Financial Assistant in Hedge Fund",
+  description: "Personal Financial Assistant in Hedge Fund - 2025",
 };
 
 export default function RootLayout({
