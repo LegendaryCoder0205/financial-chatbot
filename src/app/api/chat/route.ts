@@ -57,7 +57,7 @@ async function extractPersonalInfoWithLLM(
   lastUserMessage: string
 ): Promise<Partial<{ name: string; email: string; income: string }>> {
   try {
-    const extractionPrompt = `Extract any personal information from the following user message. Return ONLY a JSON object with any of these fields if found: name, email, income. If a field is not found, omit it. Be flexible - names can be first names, nicknames, or full names. Income can be mentioned in various ways (e.g., "$50k", "50k", "fifty thousand"). Email should be a valid email format.
+    const extractionPrompt = `Extract the full name, email and  income level of user from the following user message. Return ONLY a JSON object with any of these fields if found: name, email, income. If a field is not found, omit it. Be flexible - names can be first names, nicknames, or full names. Income can be mentioned in various ways (e.g., "$50k", "50k", "fifty thousand"). Email should be a valid email format.
 
 User message: "${lastUserMessage}"
 
